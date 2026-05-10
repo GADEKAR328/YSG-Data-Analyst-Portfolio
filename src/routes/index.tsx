@@ -1,26 +1,54 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "@/components/ui/sonner";
+import { Navbar } from "@/components/portfolio/Navbar";
+import { Hero } from "@/components/portfolio/Hero";
+import { CoreExpertise } from "@/components/portfolio/CoreExpertise";
+import { DashboardSamples } from "@/components/portfolio/DashboardSamples";
+import { FeaturedProjects } from "@/components/portfolio/FeaturedProjects";
+import { Experience } from "@/components/portfolio/Experience";
+import { Education } from "@/components/portfolio/Education";
+import { Certifications } from "@/components/portfolio/Certifications";
+import { ContactCTA } from "@/components/portfolio/ContactCTA";
+import { ContactForm } from "@/components/portfolio/ContactForm";
+import { Footer } from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Yogesh Gadekar — Data Analyst Portfolio" },
+      {
+        name: "description",
+        content:
+          "Yogesh Gadekar — Aspiring Data Analyst, AI Enthusiast & Dashboard Developer. SQL, Python, Power BI, Tableau, Excel. 11+ projects, 14 certifications.",
+      },
+      { property: "og:title", content: "Yogesh Gadekar — Data Analyst Portfolio" },
+      {
+        property: "og:description",
+        content:
+          "Premium portfolio: dashboards, AI projects, BI reporting, and analytics automation.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="min-h-screen bg-background">
+      <Navbar />
+      <Hero />
+      <CoreExpertise />
+      <DashboardSamples />
+      <FeaturedProjects />
+      <Experience />
+      <Education />
+      <Certifications />
+      <ContactCTA />
+      <ContactForm />
+      <Footer />
+      <Toaster richColors position="top-center" />
+    </main>
+  );
 }
