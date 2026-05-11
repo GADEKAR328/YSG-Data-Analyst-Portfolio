@@ -23,6 +23,12 @@ import swiggy from "@/assets/dashboard-swiggy.jpg";
 import hr from "@/assets/dashboard-hr.jpg";
 import tech from "@/assets/dashboard-tech-sales.jpg";
 import superstore from "@/assets/dashboard-superstore.jpg";
+import pythonSales from "@/assets/project-python-sales.jpg";
+import sqlBookstore from "@/assets/project-sql-bookstore.jpg";
+import gmailPipeline from "@/assets/project-gmail-pipeline.jpg";
+import emailAutomation from "@/assets/project-email-automation.jpg";
+import certGenerator from "@/assets/project-certificate-generator.jpg";
+import hiresafe from "@/assets/project-hiresafe.jpg";
 
 const GITHUB = "https://github.com/GADEKAR328";
 
