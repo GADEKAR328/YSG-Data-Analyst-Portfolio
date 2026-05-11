@@ -374,6 +374,7 @@ function CompactCard({ p, i }: { p: Project; i: number }) {
           <Github size={11} /> GitHub
         </a>
       </div>
+      </div>
     </motion.article>
   );
 }
