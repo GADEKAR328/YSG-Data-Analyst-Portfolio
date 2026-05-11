@@ -7,9 +7,11 @@
 
 <br>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Live_Site-00C2FF?style=for-the-badge)](https://analyst-portfolio-gem.lovable.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github)](https://github.com/GADEKAR328)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](#)
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Now-00C2FF?style=for-the-badge)](https://ysganalyst-portfolio-gem.lovable.app)
+
+[![GitHub Repo](https://img.shields.io/badge/📂_Repository-Open_Project-black?style=for-the-badge&logo=github)](https://github.com/GADEKAR328/YSG-Data-Analyst-Portfolio)
+
+[![GitHub Profile](https://img.shields.io/badge/GitHub-GADEKAR328-181717?style=for-the-badge&logo=github)](https://github.com/GADEKAR328)
 
 </div>
 
@@ -20,46 +22,47 @@
 Hi, I'm **Yogesh Gadekar** — passionate about building impactful digital experiences through **AI, Data Analytics, Automation, and Creative Technology**.
 
 I enjoy transforming ideas into visually engaging and intelligent solutions that combine:
-- 📊 Analytics
-- 🤖 AI Innovation
-- ⚡ Automation
-- 🎨 Modern UI/UX
-- 🌐 Interactive Web Experiences
 
-I focus on creating projects that are not only functional but also visually memorable and recruiter-friendly.
+- 📊 Analytics  
+- 🤖 AI Innovation  
+- ⚡ Automation  
+- 🎨 Modern UI/UX  
+- 🌐 Interactive Web Experiences  
 
----
-
-# 🚀 Live Portfolio
-
-## 🌐 Portfolio Website
-🔗 https://analyst-portfolio-gem.lovable.app
+This portfolio represents my journey of learning, experimentation, creativity, and technical growth.
 
 ---
 
-# 🧠 Skills & Technologies
+# 🌐 Live Portfolio
+
+## 🔗 Website
+https://ysganalyst-portfolio-gem.lovable.app
+
+## 📂 Repository
+https://github.com/GADEKAR328/YSG-Data-Analyst-Portfolio
+
+---
+
+# 🧠 Tech Stack
 
 <div align="center">
 
-## 📊 Data Analytics
+### 📊 Data Analytics
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 
-## 🤖 AI & Automation
+### 🤖 AI & Automation
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Automation](https://img.shields.io/badge/Automation-FF6B00?style=for-the-badge)
-![AI](https://img.shields.io/badge/Artificial_Intelligence-8A2BE2?style=for-the-badge)
+![Artificial Intelligence](https://img.shields.io/badge/Artificial_Intelligence-8A2BE2?style=for-the-badge)
 
-## 🌐 Web Development
+### 🌐 Frontend & Design
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-## 🎨 Design & Creative
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer)
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs)
-![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva)
 
 </div>
 
@@ -68,34 +71,32 @@ I focus on creating projects that are not only functional but also visually memo
 # 📌 Featured Projects
 
 # 📊 Dashboard Analytics Project
-### Interactive Data Visualization Dashboard
+### Interactive Business Intelligence Dashboard
 
-A modern analytics dashboard focused on presenting business insights, KPI tracking, trend analysis, and interactive visualizations.
+A modern dashboard experience focused on data visualization, KPI tracking, analytics storytelling, and interactive reporting systems.
 
 ## ✨ Features
-- Interactive Charts
-- KPI Monitoring
-- Data Insights
-- Dynamic Dashboard UI
-- Performance Tracking
+- Dynamic KPI Tracking
+- Interactive Data Visualization
+- Trend Analysis
+- Dashboard UI/UX
 - Responsive Layout
+- Business Insights
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies
 `Power BI` `SQL` `Excel` `Analytics`
-
-🔗 Add Your Dashboard GitHub Link Here
 
 ---
 
 # 🤖 AI Certificate Generator
 
-An automation system that generates certificates in bulk using Excel VBA and MS Word automation workflows.
+An automation system designed to generate certificates in bulk using Excel VBA and Microsoft Word automation workflows.
 
 ## ✨ Features
-- Bulk Processing
+- Bulk Certificate Generation
 - Automated Name Mapping
-- Dynamic Certificate Generation
-- Time Saving Workflow
+- Dynamic Certificate Creation
+- Productivity Automation
 
 ## 🛠️ Technologies
 `Excel VBA` `MS Word Automation`
@@ -106,7 +107,7 @@ An automation system that generates certificates in bulk using Excel VBA and MS 
 
 # 🎨 AI Student Future Vision Project
 
-A creative educational initiative where students are transformed into futuristic professionals using imaginative AI visuals.
+A creative educational visualization project where students are transformed into futuristic professionals using imaginative AI-generated visuals.
 
 Students were creatively visualized as:
 - 👨‍🚀 Astronauts
@@ -118,34 +119,34 @@ Students were creatively visualized as:
 
 ## ✨ Purpose
 - Student Motivation
+- Educational Innovation
 - Creativity Enhancement
 - Future Visualization
-- Educational Innovation
 
 ---
 
-# 💡 Portfolio Highlights
+# 💡 Portfolio Features
 
-✅ Premium Modern UI  
-✅ Interactive Animations  
+✅ Modern Premium Interface  
+✅ Interactive UI/UX  
+✅ Smooth Animations  
 ✅ AI Inspired Design  
-✅ Recruiter Friendly Layout  
 ✅ Responsive Experience  
-✅ GitHub Integrated  
-✅ Dashboard Showcase  
-✅ Creative Visual Storytelling  
-✅ Smooth Transitions & Effects  
+✅ Recruiter Friendly Layout  
+✅ GitHub Integration  
+✅ Creative Project Showcase  
+✅ Dashboard Focused Presentation  
 
 ---
 
-# 📈 Current Focus
+# 📈 Currently Exploring
 
 - Advanced Data Analytics
 - AI Workflow Automation
-- Interactive Dashboard Systems
-- Modern React Experiences
-- Creative AI Applications
-- 3D Portfolio Experiences
+- Interactive Dashboards
+- 3D Web Experiences
+- Modern Frontend Systems
+- AI Visualization Techniques
 
 ---
 
@@ -165,14 +166,15 @@ Students were creatively visualized as:
 
 # 🌟 Vision
 
-I aim to create impactful digital solutions that combine:
-- Artificial Intelligence
-- Analytics
-- Automation
-- Creativity
-- User Experience
+To build impactful digital solutions that combine:
 
-with the goal of building future-ready systems that solve real-world problems.
+- Artificial Intelligence  
+- Automation  
+- Analytics  
+- Creativity  
+- Modern User Experience  
+
+while continuously learning and experimenting with innovative technologies.
 
 ---
 
@@ -180,17 +182,17 @@ with the goal of building future-ready systems that solve real-world problems.
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-GADEKAR328-black?style=for-the-badge&logo=github)](https://github.com/GADEKAR328)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Live_Website-00C2FF?style=for-the-badge)](https://ysganalyst-portfolio-gem.lovable.app)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Website-00C2FF?style=for-the-badge)](https://analyst-portfolio-gem.lovable.app)
+[![GitHub](https://img.shields.io/badge/GitHub-GADEKAR328-black?style=for-the-badge&logo=github)](https://github.com/GADEKAR328)
 
 </div>
 
 ---
 
-# ⭐ Repository Support
+# ⭐ Support
 
-If you like this portfolio and projects, consider giving this repository a ⭐.
+If you like this portfolio or find it inspiring, consider giving the repository a ⭐.
 
 ---
 
