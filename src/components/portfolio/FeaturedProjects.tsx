@@ -59,8 +59,8 @@ const DASHBOARD_PROJECTS: Project[] = [
     insights: "Order volume, AOV, top cuisines, peak hours and city-level revenue distribution.",
     image: omato,
     featured: true,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/Food-Delivery-App-End-To-End-Project-POWER-BI",
+    live: "https://github.com/GADEKAR328/Food-Delivery-App-End-To-End-Project-POWER-BI",
   },
   {
     icon: ShoppingCart,
@@ -72,8 +72,8 @@ const DASHBOARD_PROJECTS: Project[] = [
     insights: "Category contribution, basket analysis, fulfilment metrics and demand patterns.",
     image: swiggy,
     featured: true,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/Grocery-Store-Data-End-to-End-Project-POWER-BI",
+    live: "https://github.com/GADEKAR328/Grocery-Store-Data-End-to-End-Project-POWER-BI",
   },
   {
     icon: Users,
@@ -85,8 +85,8 @@ const DASHBOARD_PROJECTS: Project[] = [
     insights: "Attrition rate, headcount, tenure, and department performance breakdowns.",
     image: hr,
     featured: true,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/Tableau---Skillcourse-HR-Analytics-Dashboard-by-YSG",
+    live: "https://github.com/GADEKAR328/Tableau---Skillcourse-HR-Analytics-Dashboard-by-YSG",
   },
   {
     icon: Cpu,
@@ -98,8 +98,8 @@ const DASHBOARD_PROJECTS: Project[] = [
     insights: "Region-wise revenue, top products, growth trends and channel performance.",
     image: tech,
     featured: true,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/Tableau-Indian_Tech_Sales_Project-by-YSG",
+    live: "https://github.com/GADEKAR328/Tableau-Indian_Tech_Sales_Project-by-YSG",
   },
   {
     icon: FileSpreadsheet,
@@ -110,8 +110,8 @@ const DASHBOARD_PROJECTS: Project[] = [
     category: "Reporting",
     insights: "Monthly sales, target vs actual, region splits and product-level performance.",
     image: superstore,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/MS-EXCEL-End-To-End-Dashboard",
+    live: "https://github.com/GADEKAR328/MS-EXCEL-End-To-End-Dashboard",
   },
   {
     icon: LineChart,
@@ -122,8 +122,8 @@ const DASHBOARD_PROJECTS: Project[] = [
     category: "Data Analysis",
     insights: "Segment-level revenue, seasonality and category mix.",
     image: pythonSales,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/Sales-Data-Analysis-Visualization-Python-Jupyter-Notebook",
+    live: "https://github.com/GADEKAR328/Sales-Data-Analysis-Visualization-Python-Jupyter-Notebook",
   },
   {
     icon: Database,
@@ -134,8 +134,8 @@ const DASHBOARD_PROJECTS: Project[] = [
     category: "Data Engineering",
     insights: "Schema design, joins, aggregations and customer/order analytics.",
     image: sqlBookstore,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/SQL_Project_Online_Book_Store",
+    live: "https://github.com/GADEKAR328/SQL_Project_Online_Book_Store",
   },
 ];
 
@@ -148,8 +148,8 @@ const AUTOMATION_PROJECTS: Project[] = [
     tags: ["ETL Workflow", "Automation"],
     category: "Automation",
     image: gmailPipeline,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/Append-Excel-File-from-Gmail-Project",
+    live: "https://github.com/GADEKAR328/Append-Excel-File-from-Gmail-Project",
   },
   {
     icon: MailCheck,
@@ -159,8 +159,8 @@ const AUTOMATION_PROJECTS: Project[] = [
     tags: ["Automation", "Workflow"],
     category: "Automation",
     image: emailAutomation,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/Customer-Payment-Reminder-Automation-System",
+    live: "https://github.com/GADEKAR328/Customer-Payment-Reminder-Automation-System",
   },
   {
     icon: FileBadge,
@@ -170,8 +170,8 @@ const AUTOMATION_PROJECTS: Project[] = [
     tags: ["Automation", "Document Workflow"],
     category: "Automation",
     image: certGenerator,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/Generate-Certificates-using-AI",
+    live: "https://github.com/GADEKAR328/Generate-Certificates-using-AI",
   },
   {
     icon: ShieldAlert,
@@ -181,8 +181,8 @@ const AUTOMATION_PROJECTS: Project[] = [
     tags: ["AI / ML", "Classification"],
     category: "AI Project",
     image: hiresafe,
-    github: GITHUB,
-    live: GITHUB,
+    github: "https://github.com/GADEKAR328/HireSafe-AI-Job-Scam-Detection-System",
+    live: "https://github.com/GADEKAR328/HireSafe-AI-Job-Scam-Detection-System",
   },
 ];
 
