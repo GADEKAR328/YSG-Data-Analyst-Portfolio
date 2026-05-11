@@ -23,6 +23,12 @@ import swiggy from "@/assets/dashboard-swiggy.jpg";
 import hr from "@/assets/dashboard-hr.jpg";
 import tech from "@/assets/dashboard-tech-sales.jpg";
 import superstore from "@/assets/dashboard-superstore.jpg";
+import pythonSales from "@/assets/project-python-sales.jpg";
+import sqlBookstore from "@/assets/project-sql-bookstore.jpg";
+import gmailPipeline from "@/assets/project-gmail-pipeline.jpg";
+import emailAutomation from "@/assets/project-email-automation.jpg";
+import certGenerator from "@/assets/project-certificate-generator.jpg";
+import hiresafe from "@/assets/project-hiresafe.jpg";
 
 const GITHUB = "https://github.com/GADEKAR328";
 
@@ -115,6 +121,7 @@ const DASHBOARD_PROJECTS: Project[] = [
     tags: ["Sales Analytics", "Customer Insights"],
     category: "Data Analysis",
     insights: "Segment-level revenue, seasonality and category mix.",
+    image: pythonSales,
     github: GITHUB,
     live: GITHUB,
   },
@@ -126,6 +133,7 @@ const DASHBOARD_PROJECTS: Project[] = [
     tags: ["ETL Workflow", "Business Intelligence"],
     category: "Data Engineering",
     insights: "Schema design, joins, aggregations and customer/order analytics.",
+    image: sqlBookstore,
     github: GITHUB,
     live: GITHUB,
   },
@@ -139,6 +147,7 @@ const AUTOMATION_PROJECTS: Project[] = [
     tools: ["Python", "Gmail API", "Automation"],
     tags: ["ETL Workflow", "Automation"],
     category: "Automation",
+    image: gmailPipeline,
     github: GITHUB,
     live: GITHUB,
   },
@@ -149,6 +158,7 @@ const AUTOMATION_PROJECTS: Project[] = [
     tools: ["Excel VBA", "Outlook"],
     tags: ["Automation", "Workflow"],
     category: "Automation",
+    image: emailAutomation,
     github: GITHUB,
     live: GITHUB,
   },
@@ -159,6 +169,7 @@ const AUTOMATION_PROJECTS: Project[] = [
     tools: ["Excel VBA", "MS Word", "Automation"],
     tags: ["Automation", "Document Workflow"],
     category: "Automation",
+    image: certGenerator,
     github: GITHUB,
     live: GITHUB,
   },
@@ -169,6 +180,7 @@ const AUTOMATION_PROJECTS: Project[] = [
     tools: ["Python", "Machine Learning", "NLP", "Streamlit"],
     tags: ["AI / ML", "Classification"],
     category: "AI Project",
+    image: hiresafe,
     github: GITHUB,
     live: GITHUB,
   },
@@ -310,9 +322,20 @@ function CompactCard({ p, i }: { p: Project; i: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: i * 0.06 }}
-      className="dashboard-card group relative overflow-hidden p-5"
+      className="dashboard-card group relative overflow-hidden p-0"
     >
-      <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-primary to-cyan-accent" />
+      <div className="absolute inset-y-0 left-0 z-10 w-1 bg-gradient-to-b from-primary to-cyan-accent" />
+      {p.image && (
+        <div className="aspect-[16/9] overflow-hidden bg-muted">
+          <img
+            src={p.image}
+            alt={p.title}
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+      )}
+      <div className="p-5">
       <div className="mb-3 flex items-center justify-between">
         <div className="grid h-10 w-10 place-items-center rounded-lg bg-sky text-primary">
           <p.icon size={18} />
@@ -350,6 +373,7 @@ function CompactCard({ p, i }: { p: Project; i: number }) {
         >
           <Github size={11} /> GitHub
         </a>
+      </div>
       </div>
     </motion.article>
   );
