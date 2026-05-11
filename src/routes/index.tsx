@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { Hero } from "@/components/portfolio/Hero";
 import { CoreExpertise } from "@/components/portfolio/CoreExpertise";
-import { DashboardSamples } from "@/components/portfolio/DashboardSamples";
+
 import { FeaturedProjects } from "@/components/portfolio/FeaturedProjects";
 import { Experience } from "@/components/portfolio/Experience";
 import { Education } from "@/components/portfolio/Education";
@@ -40,7 +40,6 @@ function Index() {
       <Navbar />
       <Hero />
       <CoreExpertise />
-      <DashboardSamples />
       <FeaturedProjects />
       <Experience />
       <Education />
