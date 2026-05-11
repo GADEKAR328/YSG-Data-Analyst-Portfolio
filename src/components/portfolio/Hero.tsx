@@ -66,8 +66,10 @@ export function Hero() {
               transition={{ delay: 0.4 }}
               className="mt-3 text-base font-medium text-foreground/70 md:text-lg"
             >
-              Aspiring Data Analyst <span className="text-cyan-accent">·</span> AI Enthusiast{" "}
-              <span className="text-cyan-accent">·</span> Dashboard Developer
+              Data Analyst <span className="text-cyan-accent">|</span> Power BI{" "}
+              <span className="text-cyan-accent">|</span> Tableau{" "}
+              <span className="text-cyan-accent">|</span> SQL{" "}
+              <span className="text-cyan-accent">|</span> Python
             </motion.p>
 
             <motion.p
@@ -76,9 +78,8 @@ export function Hero() {
               transition={{ delay: 0.5 }}
               className="mt-5 max-w-xl text-sm text-muted-foreground md:text-base"
             >
-              Data Analyst with M.Sc. and B.Ed. and 3.4+ years of experience in administration,
-              teaching, and data handling. Skilled in SQL, Python, Power BI, Tableau, and Excel —
-              building dashboards, ETL pipelines, automation, and BI reporting.
+              Building dashboards, automation systems, and business intelligence solutions
+              using data-driven workflows.
             </motion.p>
 
             <motion.div
