@@ -322,9 +322,20 @@ function CompactCard({ p, i }: { p: Project; i: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: i * 0.06 }}
-      className="dashboard-card group relative overflow-hidden p-5"
+      className="dashboard-card group relative overflow-hidden p-0"
     >
-      <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-primary to-cyan-accent" />
+      <div className="absolute inset-y-0 left-0 z-10 w-1 bg-gradient-to-b from-primary to-cyan-accent" />
+      {p.image && (
+        <div className="aspect-[16/9] overflow-hidden bg-muted">
+          <img
+            src={p.image}
+            alt={p.title}
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+      )}
+      <div className="p-5">
       <div className="mb-3 flex items-center justify-between">
         <div className="grid h-10 w-10 place-items-center rounded-lg bg-sky text-primary">
           <p.icon size={18} />
