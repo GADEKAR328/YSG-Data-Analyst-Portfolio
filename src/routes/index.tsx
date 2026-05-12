@@ -11,6 +11,7 @@ import { Certifications } from "@/components/portfolio/Certifications";
 import { ContactCTA } from "@/components/portfolio/ContactCTA";
 import { ContactForm } from "@/components/portfolio/ContactForm";
 import { Footer } from "@/components/portfolio/Footer";
+import { ScrollProgress } from "@/components/portfolio/ScrollProgress";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,6 +38,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="min-h-screen bg-background">
+      <ScrollProgress />
       <Navbar />
       <Hero />
       <CoreExpertise />
