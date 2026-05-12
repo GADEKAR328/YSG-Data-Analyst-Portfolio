@@ -379,7 +379,8 @@ function CompactCard({ p, i }: { p: Project; i: number }) {
         </a>
       </div>
       </div>
-    </motion.article>
+      </Tilt3D>
+    </motion.div>
   );
 }
 
