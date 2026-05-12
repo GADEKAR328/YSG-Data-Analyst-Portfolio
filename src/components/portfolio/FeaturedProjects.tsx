@@ -18,6 +18,7 @@ import {
   Activity,
 } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
+import { Tilt3D } from "./Tilt3D";
 import omato from "@/assets/dashboard-omato.jpg";
 import swiggy from "@/assets/dashboard-swiggy.jpg";
 import hr from "@/assets/dashboard-hr.jpg";
@@ -212,15 +213,16 @@ const KPI_SAMPLES: Kpi[][] = [
 function DashboardCard({ p, i }: { p: Project; i: number }) {
   const kpis = KPI_SAMPLES[i] ?? KPI_SAMPLES[0];
   return (
-    <motion.article
+    <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.55, delay: i * 0.08 }}
-      className="group dashboard-card relative overflow-hidden p-0"
+      className="perspective-1000"
     >
-      {/* gradient frame on hover */}
-      <div className="pointer-events-none absolute -inset-px rounded-[inherit] bg-gradient-to-br from-primary/0 via-cyan-accent/0 to-primary/0 opacity-0 transition-opacity duration-500 group-hover:from-primary/40 group-hover:via-cyan-accent/40 group-hover:to-primary/40 group-hover:opacity-100" />
+      <Tilt3D max={6} className="group dashboard-card relative overflow-hidden rounded-[var(--radius-xl)] shine">
+        {/* gradient frame on hover */}
+        <div className="pointer-events-none absolute -inset-px rounded-[inherit] bg-gradient-to-br from-primary/0 via-cyan-accent/0 to-primary/0 opacity-0 transition-opacity duration-500 group-hover:from-primary/40 group-hover:via-cyan-accent/40 group-hover:to-primary/40 group-hover:opacity-100" />
       <div className="relative">
         {p.featured && (
           <span className="absolute left-4 top-4 z-10 inline-flex items-center gap-1 rounded-full bg-primary/95 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-primary-foreground shadow-lg backdrop-blur">
@@ -311,20 +313,22 @@ function DashboardCard({ p, i }: { p: Project; i: number }) {
           </a>
         </div>
       </div>
-    </motion.article>
+      </Tilt3D>
+    </motion.div>
   );
 }
 
 function CompactCard({ p, i }: { p: Project; i: number }) {
   return (
-    <motion.article
+    <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: i * 0.06 }}
-      className="dashboard-card group relative overflow-hidden p-0"
+      className="perspective-1000"
     >
-      <div className="absolute inset-y-0 left-0 z-10 w-1 bg-gradient-to-b from-primary to-cyan-accent" />
+      <Tilt3D max={5} className="dashboard-card group relative overflow-hidden rounded-[var(--radius-xl)] shine">
+        <div className="absolute inset-y-0 left-0 z-10 w-1 bg-gradient-to-b from-primary to-cyan-accent" />
       {p.image && (
         <div className="aspect-[16/9] overflow-hidden bg-muted">
           <img
