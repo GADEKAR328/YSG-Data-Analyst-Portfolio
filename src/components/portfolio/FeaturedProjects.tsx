@@ -218,9 +218,8 @@ function DashboardCard({ p, i }: { p: Project; i: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.55, delay: i * 0.08 }}
-      className="perspective-1000"
     >
-      <Tilt3D max={6} className="group dashboard-card relative overflow-hidden rounded-[var(--radius-xl)] shine">
+      <div className="group dashboard-card relative overflow-hidden rounded-[var(--radius-xl)]">
         {/* gradient frame on hover */}
         <div className="pointer-events-none absolute -inset-px rounded-[inherit] bg-gradient-to-br from-primary/0 via-cyan-accent/0 to-primary/0 opacity-0 transition-opacity duration-500 group-hover:from-primary/40 group-hover:via-cyan-accent/40 group-hover:to-primary/40 group-hover:opacity-100" />
       <div className="relative">
@@ -313,7 +312,7 @@ function DashboardCard({ p, i }: { p: Project; i: number }) {
           </a>
         </div>
       </div>
-      </Tilt3D>
+      </div>
     </motion.div>
   );
 }
@@ -325,9 +324,8 @@ function CompactCard({ p, i }: { p: Project; i: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: i * 0.06 }}
-      className="perspective-1000"
     >
-      <Tilt3D max={5} className="dashboard-card group relative overflow-hidden rounded-[var(--radius-xl)] shine">
+      <div className="dashboard-card group relative overflow-hidden rounded-[var(--radius-xl)]">
         <div className="absolute inset-y-0 left-0 z-10 w-1 bg-gradient-to-b from-primary to-cyan-accent" />
       {p.image && (
         <div className="aspect-[16/9] overflow-hidden bg-muted">
@@ -379,7 +377,7 @@ function CompactCard({ p, i }: { p: Project; i: number }) {
         </a>
       </div>
       </div>
-      </Tilt3D>
+      </div>
     </motion.div>
   );
 }
