@@ -64,14 +64,6 @@
   @keyframes blink {
     50% { opacity: 0; }
   }
-  @keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
-  }
-  @keyframes tilt-float {
-    0%, 100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
-    50% { transform: translateY(-6px) rotateX(2deg) rotateY(-2deg); }
-  }
 }
 
 :root {
