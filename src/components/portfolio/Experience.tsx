@@ -6,21 +6,21 @@ const ITEMS = [
   {
     role: "Admin Executive · Transport Manager · Librarian",
     org: "MindSpark International School",
-    period: "Full-time",
+    period: "2025 – 2026",
     points: [
-      "Managed transport scheduling and student allocation using Excel systems",
-      "Handled library data and administrative reporting workflows",
-      "Built tracking dashboards for daily operational insights",
+      "Managed transport scheduling, attendance tracking and administrative operations for 214+ students",
+      "Built structured Excel tracking systems improving workflow efficiency and operational coordination",
+      "Coordinated daily communication, reporting processes and timetable management activities",
     ],
   },
   {
     role: "Assistant Professor",
-    org: "NACS College",
-    period: "Academic",
+    org: "NACS College, Parner",
+    period: "2021 – 2023",
     points: [
-      "Delivered 200+ lectures and managed academic datasets",
-      "Used Excel for student performance tracking and reporting",
-      "Designed automated report cards reducing manual effort",
+      "Delivered 200+ lectures and managed academic datasets across multiple cohorts",
+      "Prepared presentations, reports, lab documentation and curriculum support materials",
+      "Tracked academic reporting, assessments and student performance using Excel",
     ],
   },
   {
