@@ -1,48 +1,31 @@
-## Plan: Build the Premium Data Analyst Portfolio
+## Plan
 
-The home page is still the blank placeholder — assets are prepared (your real photo, 5 dashboard images, resume PDF in /public, framer-motion installed), but no portfolio code exists yet. I'll build the full single-page portfolio per the PRD.
+### 1. Remove 3D tilt effect on project cards
+- In `src/components/portfolio/FeaturedProjects.tsx`: remove `Tilt3D` import and unwrap both `DashboardCard` and `CompactCard` — replace `<Tilt3D ...>...</Tilt3D>` with a plain `<div>` keeping the same classes (`group dashboard-card relative overflow-hidden rounded-[var(--radius-xl)]`). Drop `shine` and `perspective-1000` since those were paired with the tilt.
+- Delete `src/components/portfolio/Tilt3D.tsx`.
+- Clean up tilt/shine related CSS in `src/styles.css` (`.perspective-1000`, `.preserve-3d`, `.shine`, `.float-3d`, shimmer/tilt-float keyframes). Keep `ScrollProgress` (user only complained about tilt).
 
-### Design system (`src/styles.css`)
-- Light professional palette in `oklch`: deep royal blue, light sky blue, cyan accent, white, dark slate text, soft gray border.
-- Heading font: Times New Roman serif. Body font: Inter (system fallback).
-- Tokens for: gradient hero bg, glass card, blue glow shadow, soft card shadow, animated progress fill.
-- Keyframes: fade-in, fade-in-up, scale-in, float, glow-pulse, gradient-shift, progress-fill, typing.
-- Utility classes: `.glass-card`, `.dashboard-card`, `.timeline-line`, `.glow-border`, `.hover-lift`, `.cursor-glow`.
+### 2. Fix LinkedIn URL everywhere
+Update to `https://www.linkedin.com/in/yogesh-gadekar-a1231b189/` in:
+- `src/components/portfolio/Hero.tsx` (line 115)
+- `src/components/portfolio/Footer.tsx` (line 21)
+- `src/components/portfolio/ContactCTA.tsx` (already correct, just add trailing slash for consistency)
 
-### Page structure (single scrolling page at `/`)
-Single-route portfolio with smooth-scroll hash anchors (acceptable per PRD — recruiters expect one resume-style page). Per-page `head()` SEO with title "Yogesh Gadekar — Data Analyst Portfolio", description, og tags, JSON-LD Person schema.
+### 3. Verify email
+Email `yogeshgadekar141@gmail.com` is already correct in ContactCTA, ContactForm, and Footer — confirm no changes needed.
 
-### Components (`src/components/portfolio/`)
-1. **Navbar.tsx** — sticky glass nav with logo, anchor links, Resume CTA.
-2. **Hero.tsx** — gradient bg + floating particles, circular profile (your real photo) with glowing blue ring, animated name (typing effect), subtitle, summary, social/resume/contact buttons, 3 stat cards (11+ Projects, 14 Certifications, 3.4+ yrs Experience).
-3. **CoreExpertise.tsx** — 3 dashboard cards (Programming & Analytics, Data & AI, Soft Skills) with animated progress bars (in-view triggered).
-4. **DashboardSamples.tsx** — responsive grid of the 5 real dashboard screenshots with hover zoom + blur overlay showing title.
-5. **FeaturedProjects.tsx** — 6 project cards with blue left border, tech badges, GitHub + Live demo buttons. Pulled from resume: HireSafe AI Job Scam Detection, AI Resume Analyzer, Smart Dashboard Analytics, Certificate Automation (VBA), Python Sales EDA, SQL Online Bookstore.
-6. **Experience.tsx** — vertical timeline with dots/connector: Admin Executive @ MindSpark, Asst. Professor @ NACS, Freelance Analytics.
-7. **Education.tsx** — 3 cards: B.Ed (Vidya Pratishthan, 75.35%), M.Sc Zoology (NACS, 76.04%), B.Sc Zoology (79.31%).
-8. **Certifications.tsx** — 2-col responsive grid of 14 certs from resume with Lucide icons.
-9. **ContactCTA.tsx** — deep blue gradient band with "Let's Build Something Amazing" + Email / LinkedIn / GitHub / WhatsApp buttons (real links: email yogeshgadekar141@gmail.com, phone 9096846550, linkedin/yogesh-gadekar, github.com/GADEKAR328).
-10. **ContactForm.tsx** — validated form (zod): name, email, phone, subject, message; submit shows toast (no backend — mailto fallback or just local toast).
-11. **Footer.tsx** — copyright, quick links, socials.
-12. **Particles.tsx** — lightweight floating data-dot particle background using framer-motion.
+### 4. Update content from new resume
+From the uploaded ATS resume:
+- **Experience timeline** in `src/components/portfolio/Experience.tsx`: add real dates ("2025 – 2026" for MindSpark, "2021 – 2023" for NACS College Parner). Refresh bullets to match resume wording (transport for 214+ students, 200+ lectures, etc.).
+- **Project metrics** in `src/components/portfolio/FeaturedProjects.tsx`: enhance descriptions/insights with the concrete numbers from the resume:
+  - Food Delivery: 15.1K+ orders, 2.7K+ transactions, AOV 5.5
+  - HR Analytics: 572 employees, 17.31% attrition
+  - Grocery Store: 1.20M+ sales, 9K+ orders, avg sales 141.01
+  - Excel Sales: 58.2L+ sales, 9,994+ transactions
+- **Hero stats** stay (`11+ Projects`, `14 Certifications`, `3.4+ Years`).
+- Replace `public/Yogesh_Gadekar_Resume.pdf` with the newly uploaded PDF.
 
-### Animations (framer-motion)
-- Section fade-in-up on scroll (`whileInView`).
-- Hero typing effect for subtitle.
-- Hover lift + glow on cards.
-- Progress bars animate on view.
-- Floating particles in hero.
+### 5. Verify
+Visually scan the preview and confirm LinkedIn/email links open correctly; ensure no leftover Tilt3D imports break the build.
 
-### Mobile responsiveness
-- Single-column < 768px, 2-col tablet, full grid desktop.
-- Mobile hamburger nav.
-
-### Files to create/modify
-- Modify: `src/styles.css`, `src/routes/index.tsx`, `src/routes/__root.tsx` (root meta).
-- Create: 12 component files in `src/components/portfolio/`.
-
-### Tech notes
-- All colors via semantic tokens — no inline hex in components.
-- Form validation with `zod` (already in stack).
-- No backend; form submit = sonner toast + reset.
-- Resume button links to `/Yogesh_Gadekar_Resume.pdf` (already in public).
+No backend or routing changes.

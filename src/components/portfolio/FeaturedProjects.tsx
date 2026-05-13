@@ -18,7 +18,7 @@ import {
   Activity,
 } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
-import { Tilt3D } from "./Tilt3D";
+
 import omato from "@/assets/dashboard-omato.jpg";
 import swiggy from "@/assets/dashboard-swiggy.jpg";
 import hr from "@/assets/dashboard-hr.jpg";
@@ -53,11 +53,11 @@ const DASHBOARD_PROJECTS: Project[] = [
   {
     icon: ShoppingCart,
     title: "Food Delivery Power BI Dashboard",
-    desc: "Interactive Power BI dashboard analyzing food delivery orders, revenue trends, restaurant performance, and customer behavior patterns.",
+    desc: "Interactive Power BI dashboard analyzing 15.1K+ food orders and 2.7K+ transactions across cuisines, payment methods, and monthly sales trends.",
     tools: ["Power BI", "DAX", "Power Query"],
     tags: ["Sales Analytics", "Revenue Trends", "KPI Dashboard"],
     category: "Business Intelligence",
-    insights: "Order volume, AOV, top cuisines, peak hours and city-level revenue distribution.",
+    insights: "15.1K+ orders · 2.7K+ transactions · AOV 5.5 · category-wise demand & customer ordering behavior.",
     image: omato,
     featured: true,
     github: "https://github.com/GADEKAR328/Food-Delivery-App-End-To-End-Project-POWER-BI",
@@ -66,11 +66,11 @@ const DASHBOARD_PROJECTS: Project[] = [
   {
     icon: ShoppingCart,
     title: "Grocery Store Analytics Dashboard",
-    desc: "Power BI dashboard for grocery / quick-commerce data covering category sales, product mix, and customer purchase trends.",
+    desc: "Power BI dashboard analyzing 1.20M+ in total sales and 9K+ customer orders across categories, cities and shop types.",
     tools: ["Power BI", "DAX", "Excel"],
     tags: ["Customer Insights", "Sales Analytics", "KPI Dashboard"],
     category: "Business Intelligence",
-    insights: "Category contribution, basket analysis, fulfilment metrics and demand patterns.",
+    insights: "1.20M+ sales · 9K+ orders · avg sales 141.01 · city-tier performance & category revenue.",
     image: swiggy,
     featured: true,
     github: "https://github.com/GADEKAR328/Grocery-Store-Data-End-to-End-Project-POWER-BI",
@@ -79,11 +79,11 @@ const DASHBOARD_PROJECTS: Project[] = [
   {
     icon: Users,
     title: "HR Analytics Dashboard",
-    desc: "Tableau dashboard tracking workforce metrics — attrition, demographics, performance and department-level KPIs.",
+    desc: "Tableau dashboard tracking 572 employees with 17.31% attrition rate analysis across departments and demographics.",
     tools: ["Tableau", "Excel"],
     tags: ["HR Analytics", "KPI Dashboard", "Business Intelligence"],
     category: "People Analytics",
-    insights: "Attrition rate, headcount, tenure, and department performance breakdowns.",
+    insights: "572 employees · 17.31% attrition · job satisfaction, gender split & department-wise trends.",
     image: hr,
     featured: true,
     github: "https://github.com/GADEKAR328/Tableau---Skillcourse-HR-Analytics-Dashboard-by-YSG",
@@ -105,11 +105,11 @@ const DASHBOARD_PROJECTS: Project[] = [
   {
     icon: FileSpreadsheet,
     title: "Excel Sales Dashboard",
-    desc: "Dynamic Excel dashboard with pivot-based KPIs, slicers and conditional formatting for end-to-end sales reporting.",
+    desc: "Interactive Excel dashboard analyzing 58.2L+ in sales and 9,994+ transactions across regions and customer segments.",
     tools: ["Excel", "Pivot Tables", "Power Query"],
     tags: ["Sales Analytics", "KPI Dashboard"],
     category: "Reporting",
-    insights: "Monthly sales, target vs actual, region splits and product-level performance.",
+    insights: "58.2L+ sales · 9,994+ transactions · monthly trends, region splits & category performance.",
     image: superstore,
     github: "https://github.com/GADEKAR328/MS-EXCEL-End-To-End-Dashboard",
     live: "https://github.com/GADEKAR328/MS-EXCEL-End-To-End-Dashboard",
@@ -218,9 +218,8 @@ function DashboardCard({ p, i }: { p: Project; i: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.55, delay: i * 0.08 }}
-      className="perspective-1000"
     >
-      <Tilt3D max={6} className="group dashboard-card relative overflow-hidden rounded-[var(--radius-xl)] shine">
+      <div className="group dashboard-card relative overflow-hidden rounded-[var(--radius-xl)]">
         {/* gradient frame on hover */}
         <div className="pointer-events-none absolute -inset-px rounded-[inherit] bg-gradient-to-br from-primary/0 via-cyan-accent/0 to-primary/0 opacity-0 transition-opacity duration-500 group-hover:from-primary/40 group-hover:via-cyan-accent/40 group-hover:to-primary/40 group-hover:opacity-100" />
       <div className="relative">
@@ -313,7 +312,7 @@ function DashboardCard({ p, i }: { p: Project; i: number }) {
           </a>
         </div>
       </div>
-      </Tilt3D>
+      </div>
     </motion.div>
   );
 }
@@ -325,9 +324,8 @@ function CompactCard({ p, i }: { p: Project; i: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: i * 0.06 }}
-      className="perspective-1000"
     >
-      <Tilt3D max={5} className="dashboard-card group relative overflow-hidden rounded-[var(--radius-xl)] shine">
+      <div className="dashboard-card group relative overflow-hidden rounded-[var(--radius-xl)]">
         <div className="absolute inset-y-0 left-0 z-10 w-1 bg-gradient-to-b from-primary to-cyan-accent" />
       {p.image && (
         <div className="aspect-[16/9] overflow-hidden bg-muted">
@@ -379,7 +377,7 @@ function CompactCard({ p, i }: { p: Project; i: number }) {
         </a>
       </div>
       </div>
-      </Tilt3D>
+      </div>
     </motion.div>
   );
 }

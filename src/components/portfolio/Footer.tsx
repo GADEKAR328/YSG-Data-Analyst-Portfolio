@@ -18,7 +18,7 @@ export function Footer() {
             <Github size={16} />
           </a>
           <a
-            href="https://linkedin.com/in/yogesh-gadekar"
+            href="https://www.linkedin.com/in/yogesh-gadekar-a1231b189/"
             target="_blank"
             rel="noreferrer"
             className="grid h-9 w-9 place-items-center rounded-full border border-border text-foreground/70 transition-colors hover:border-primary hover:text-primary"

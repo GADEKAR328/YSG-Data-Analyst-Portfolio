@@ -112,7 +112,7 @@ export function Hero() {
                   <Github size={18} />
                 </a>
                 <a
-                  href="https://linkedin.com/in/yogesh-gadekar"
+                  href="https://www.linkedin.com/in/yogesh-gadekar-a1231b189/"
                   target="_blank"
                   rel="noreferrer"
                   className="grid h-11 w-11 place-items-center rounded-full border border-border bg-white text-primary transition-all hover:scale-110 hover:bg-primary hover:text-primary-foreground"
