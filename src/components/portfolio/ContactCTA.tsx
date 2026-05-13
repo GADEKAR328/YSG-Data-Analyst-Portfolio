@@ -3,7 +3,7 @@ import { Mail, Linkedin, Github, MessageCircle } from "lucide-react";
 
 const LINKS = [
   { icon: Mail, label: "Email", href: "mailto:yogeshgadekar141@gmail.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/yogesh-gadekar-a1231b189" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/yogesh-gadekar-a1231b189/" },
   { icon: Github, label: "GitHub", href: "https://github.com/GADEKAR328" },
   { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/919096846550" },
 ];

@@ -41,9 +41,6 @@
   --animate-glow-pulse: glow-pulse 3s ease-in-out infinite;
   --animate-gradient: gradient-shift 12s ease infinite;
   --animate-blink: blink 1s step-end infinite;
-  --animate-shimmer: shimmer 2.4s linear infinite;
-  --animate-tilt-float: tilt-float 7s ease-in-out infinite;
-
   @keyframes fade-in-up {
     from { opacity: 0; transform: translateY(24px); }
     to { opacity: 1; transform: translateY(0); }
@@ -172,22 +169,4 @@
   }
   .section-pad { @apply py-20 md:py-28; }
   .container-x { @apply mx-auto w-full max-w-6xl px-5 md:px-8; }
-  .perspective-1000 { perspective: 1000px; }
-  .preserve-3d { transform-style: preserve-3d; }
-  .shine {
-    position: relative;
-    overflow: hidden;
-  }
-  .shine::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.5) 50%, transparent 70%);
-    background-size: 200% 100%;
-    transform: translateX(-100%);
-    transition: transform 0.9s ease;
-    pointer-events: none;
-  }
-  .shine:hover::after { transform: translateX(100%); }
-  .float-3d { animation: tilt-float 7s ease-in-out infinite; transform-style: preserve-3d; }
 }
